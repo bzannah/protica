@@ -1,17 +1,52 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+html {
+  min-height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: 'Ubuntu', sans-serif;
+  background: url('/img/bgimage.jpeg');
+  background-size: 100%;
+  background-position: top;
+  background-color: whitesmoke;
+  min-height: 100%;
 }
 
 .logo {
   font-family: 'Righteous', cursive;
+}
+
+.notification {
+  font-family: 'Righteous', cursive;
+}
+
+form {
+  padding: 20px;
+  margin-top: 60px;
+}
+
+form button,
+form h5 {
+  margin: 20px 0;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-color: teal;
+  box-shadow: none;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label,
+input[type=email]:not(.browser-default):focus:not([readonly])+label,
+input[type=password]:not(.browser-default):focus:not([readonly])+label {
+  color: teal !important;
 }
