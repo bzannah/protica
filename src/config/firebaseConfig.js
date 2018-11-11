@@ -1,6 +1,7 @@
-import firebase from 'firebase/app'; // only core func
+import firebase from 'firebase/app'; // only core functionalities
 import 'firebase/database';
 import 'firebase/auth';
+import '@firebase/firestore'
 
 // Initialize Firebase
 var config = {

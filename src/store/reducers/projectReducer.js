@@ -10,8 +10,14 @@ const initState = {
 const projectReducer = (state = initState, action) => {
     if (action.type === 'CREATE_PROJECT') {
         console.log('created', action.project);
+        return state;
+    } else if (action.type === 'CREATE_PROJECT_ERROR') {
+        console.log('create project errored', action.err);
+        return state;
     }
-    return state;
+    else {
+        return state;
+    }
 }
 
 export default projectReducer;
